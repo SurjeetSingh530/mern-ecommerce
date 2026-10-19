@@ -1,0 +1,173 @@
+/* =========================================================
+   PREMIUM GOLD PALETTE
+   ========================================================= */
+
+:root {
+  --primary: #1e3a5f;
+  --primary-dark: #172f4d;
+  --secondary: #2f6b8a;
+
+  --background: #f7f9fc;
+  --surface: #ffffff;
+
+  --text: #1f2937;
+  --text-secondary: #6b7280;
+
+  /* Rich Luxury Gold */
+  --accent: #b8860b;
+  --accent-dark: #8f6508;
+  --accent-light: #fbf4dc;
+  --accent-soft: #f6ecd0;
+  --accent-border: #d8b84c;
+  --accent-bright: #d4af37;
+
+  --border: #e5e7eb;
+  --border-dark: #d1d5db;
+
+  --success: #16835b;
+  --success-bg: #eaf7f1;
+
+  --danger: #c0392b;
+  --danger-bg: #fdedec;
+
+  --warning: #a87500;
+  --warning-bg: #fff7df;
+
+  --info: #2f6b8a;
+  --info-bg: #eaf3f7;
+
+  --shadow-sm: 0 2px 8px rgba(30, 58, 95, 0.06);
+  --shadow-md: 0 6px 20px rgba(30, 58, 95, 0.08);
+  --shadow-lg: 0 12px 32px rgba(30, 58, 95, 0.1);
+
+  /* Gold shadows */
+  --shadow-gold: 0 6px 20px rgba(184, 134, 11, 0.18);
+  --shadow-gold-lg: 0 10px 30px rgba(184, 134, 11, 0.22);
+
+  --radius-sm: 8px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+
+  --transition: 0.25s ease;
+}
+/* =========================================================
+   GOLD BUTTON
+   ========================================================= */
+
+.btn-accent {
+  background: linear-gradient(135deg, #d4af37 0%, #b8860b 50%, #9a6f08 100%);
+
+  color: #fff;
+
+  border: 1px solid rgba(143, 101, 8, 0.35);
+
+  box-shadow: 0 4px 12px rgba(184, 134, 11, 0.18);
+
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+}
+
+.btn-accent:hover {
+  background: linear-gradient(135deg, #dfbd4b 0%, #c69716 50%, #a8780b 100%);
+
+  box-shadow: 0 7px 20px rgba(184, 134, 11, 0.28);
+
+  transform: translateY(-1px);
+}
+.gold-title {
+  position: relative;
+
+  display: inline-block;
+
+  color: var(--primary);
+}
+
+.gold-title::after {
+  content: "";
+
+  display: block;
+
+  width: 45px;
+  height: 3px;
+
+  margin-top: 9px;
+
+  border-radius: 999px;
+
+  background: linear-gradient(90deg, var(--accent-dark), var(--accent-bright));
+}
+.product-price,
+.wishlist-price {
+  color: var(--accent-dark);
+
+  font-size: 20px;
+  font-weight: 750;
+
+  letter-spacing: -0.02em;
+}
+.details-price {
+  color: var(--accent-dark);
+
+  font-size: clamp(28px, 4vw, 34px);
+  font-weight: 750;
+
+  letter-spacing: -0.025em;
+}
+.premium-badge {
+  display: inline-flex;
+
+  align-items: center;
+
+  padding: 6px 11px;
+
+  border: 1px solid rgba(184, 134, 11, 0.25);
+
+  border-radius: 999px;
+
+  background: linear-gradient(135deg, #fff9e8, #f7eac1);
+
+  color: #8f6508;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  letter-spacing: 0.3px;
+}
+.premium-card {
+  position: relative;
+
+  background: var(--surface);
+
+  border: 1px solid var(--border);
+
+  border-radius: var(--radius-lg);
+
+  transition:
+    transform var(--transition),
+    border-color var(--transition),
+    box-shadow var(--transition);
+}
+
+.premium-card:hover {
+  transform: translateY(-4px);
+
+  border-color: rgba(184, 134, 11, 0.45);
+
+  box-shadow: var(--shadow-gold);
+}
+.hero {
+  position: relative;
+
+  padding: 80px 40px;
+
+  background:
+    radial-gradient(
+      circle at 85% 20%,
+      rgba(212, 175, 55, 0.12),
+      transparent 30%
+    ),
+    linear-gradient(135deg, #f7f9fc 0%, #edf3f7 65%, #faf6e9 100%);
+
+  border-bottom: 1px solid var(--border);
+
+  overflow: hidden;
+}

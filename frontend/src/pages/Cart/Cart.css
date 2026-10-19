@@ -1,0 +1,402 @@
+/* =========================================
+   PRODUCT FORM PAGE
+   ========================================= */
+
+.product-form-page {
+  width: 100%;
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 56px 24px;
+  box-sizing: border-box;
+
+  font-family:
+    Inter,
+    Poppins,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+}
+
+/* =========================================
+   PAGE HEADING
+   ========================================= */
+
+.product-form-page h1 {
+  margin: 0 0 34px;
+
+  color: #1e3a5f;
+
+  font-family: inherit;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.7px;
+
+  text-align: center;
+}
+
+/* =========================================
+   FORM CARD
+   ========================================= */
+
+.product-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  padding: 38px;
+
+  background: #ffffff;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+
+  box-shadow:
+    0 2px 5px rgba(31, 41, 55, 0.03),
+    0 12px 32px rgba(30, 58, 95, 0.07);
+
+  box-sizing: border-box;
+
+  transition:
+    box-shadow 250ms ease,
+    border-color 250ms ease;
+}
+
+.product-form:hover {
+  border-color: #d8dee6;
+
+  box-shadow:
+    0 3px 8px rgba(31, 41, 55, 0.04),
+    0 16px 38px rgba(30, 58, 95, 0.08);
+}
+
+/* =========================================
+   LABELS
+   ========================================= */
+
+.product-form label {
+  margin-top: 14px;
+
+  color: #1f2937;
+
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+/* First label */
+
+.product-form label:first-child {
+  margin-top: 0;
+}
+
+/* =========================================
+   INPUT + TEXTAREA
+   ========================================= */
+
+.product-form input,
+.product-form textarea {
+  width: 100%;
+  min-height: 46px;
+
+  padding: 12px 14px;
+
+  box-sizing: border-box;
+
+  background: #ffffff;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+
+  color: #1f2937;
+
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.5;
+
+  outline: none;
+
+  transition:
+    border-color 220ms ease,
+    box-shadow 220ms ease,
+    background-color 220ms ease,
+    transform 220ms ease;
+}
+
+/* =========================================
+   PLACEHOLDER
+   ========================================= */
+
+.product-form input::placeholder,
+.product-form textarea::placeholder {
+  color: #9ca3af;
+}
+
+/* =========================================
+   HOVER
+   ========================================= */
+
+.product-form input:hover,
+.product-form textarea:hover {
+  border-color: #b9c7d3;
+}
+
+/* =========================================
+   FOCUS
+   ========================================= */
+
+.product-form input:focus,
+.product-form textarea:focus {
+  background: #ffffff;
+
+  border-color: #2f6b8a;
+
+  box-shadow: 0 0 0 3px rgba(47, 107, 138, 0.12);
+}
+
+/* =========================================
+   INVALID INPUT
+   ========================================= */
+
+.product-form input:invalid:not(:placeholder-shown),
+.product-form textarea:invalid:not(:placeholder-shown) {
+  border-color: #d97706;
+}
+
+/* =========================================
+   TEXTAREA
+   ========================================= */
+
+.product-form textarea {
+  min-height: 125px;
+
+  resize: vertical;
+}
+
+/* =========================================
+   BUTTON
+   ========================================= */
+
+.product-form button {
+  width: 100%;
+
+  margin-top: 24px;
+  padding: 14px 20px;
+
+  border: 1px solid #1e3a5f;
+  border-radius: 10px;
+
+  background: #1e3a5f;
+  color: #ffffff;
+
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.4;
+
+  cursor: pointer;
+
+  box-shadow: 0 4px 10px rgba(30, 58, 95, 0.12);
+
+  transition:
+    background-color 220ms ease,
+    border-color 220ms ease,
+    transform 220ms ease,
+    box-shadow 220ms ease;
+}
+
+/* =========================================
+   BUTTON HOVER
+   ========================================= */
+
+.product-form button:hover {
+  background: #2f6b8a;
+  border-color: #2f6b8a;
+
+  box-shadow: 0 7px 18px rgba(30, 58, 95, 0.17);
+
+  transform: translateY(-1px);
+}
+
+/* =========================================
+   BUTTON FOCUS
+   ========================================= */
+
+.product-form button:focus-visible {
+  outline: none;
+
+  box-shadow:
+    0 0 0 3px rgba(47, 107, 138, 0.18),
+    0 6px 16px rgba(30, 58, 95, 0.14);
+}
+
+/* =========================================
+   BUTTON ACTIVE
+   ========================================= */
+
+.product-form button:active {
+  transform: translateY(0);
+
+  box-shadow: 0 3px 8px rgba(30, 58, 95, 0.12);
+}
+
+/* =========================================
+   DISABLED BUTTON
+   ========================================= */
+
+.product-form button:disabled {
+  background: #9ca3af;
+  border-color: #9ca3af;
+
+  color: #ffffff;
+
+  cursor: not-allowed;
+
+  box-shadow: none;
+
+  transform: none;
+}
+
+/* =========================================
+   ERROR MESSAGE
+   ========================================= */
+
+.form-error {
+  margin: 0 0 20px;
+  padding: 13px 15px;
+
+  background: #fef2f2;
+
+  border: 1px solid #fecaca;
+  border-radius: 10px;
+
+  color: #b91c1c;
+
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.5;
+
+  text-align: center;
+
+  box-shadow: 0 2px 6px rgba(185, 28, 28, 0.04);
+}
+
+/* =========================================
+   NUMBER INPUT
+   ========================================= */
+
+.product-form input[type="number"] {
+  appearance: textfield;
+}
+
+/* Chrome / Edge / Safari */
+
+.product-form input[type="number"]::-webkit-inner-spin-button,
+.product-form input[type="number"]::-webkit-outer-spin-button {
+  opacity: 0.7;
+}
+
+/* =========================================
+   TABLET
+   ========================================= */
+
+@media (max-width: 768px) {
+  .product-form-page {
+    max-width: 680px;
+    padding: 44px 20px;
+  }
+
+  .product-form-page h1 {
+    font-size: 30px;
+    margin-bottom: 28px;
+  }
+
+  .product-form {
+    padding: 30px 26px;
+  }
+}
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 480px) {
+  .product-form-page {
+    padding: 32px 14px;
+  }
+
+  .product-form-page h1 {
+    font-size: 25px;
+    margin-bottom: 22px;
+    letter-spacing: -0.4px;
+  }
+
+  .product-form {
+    gap: 8px;
+
+    padding: 24px 18px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 4px 18px rgba(30, 58, 95, 0.07);
+  }
+
+  .product-form label {
+    margin-top: 12px;
+
+    font-size: 13px;
+  }
+
+  .product-form input,
+  .product-form textarea {
+    min-height: 44px;
+
+    padding: 11px 12px;
+
+    font-size: 14px;
+
+    border-radius: 9px;
+  }
+
+  .product-form textarea {
+    min-height: 110px;
+  }
+
+  .product-form button {
+    margin-top: 20px;
+
+    padding: 13px 16px;
+
+    font-size: 14px;
+
+    border-radius: 9px;
+  }
+
+  .form-error {
+    padding: 11px 12px;
+
+    font-size: 13px;
+  }
+}
+
+/* =========================================
+   SMALL MOBILE
+   ========================================= */
+
+@media (max-width: 360px) {
+  .product-form-page {
+    padding: 26px 10px;
+  }
+
+  .product-form {
+    padding: 20px 15px;
+  }
+
+  .product-form-page h1 {
+    font-size: 23px;
+  }
+}

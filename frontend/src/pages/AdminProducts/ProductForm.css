@@ -1,0 +1,72 @@
+.product-form-page {
+  max-width: 750px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.product-form-page h1 {
+  margin-bottom: 30px;
+}
+
+.product-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+}
+
+.product-form label {
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.product-form input,
+.product-form textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+.product-form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.product-form input[type="file"] {
+  padding: 10px;
+}
+
+.image-preview {
+  margin: 15px 0;
+}
+
+.image-preview img {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 5px;
+}
+
+.product-form button {
+  margin-top: 20px;
+  padding: 13px;
+  border: none;
+  border-radius: 7px;
+  background: #1e3a5f;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.product-form button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
