@@ -27,7 +27,7 @@ const Profile = () => {
   // GET PROFILE
   const fetchProfile = async () => {
     try {
-      const response = await fetch("http://localhost:5000/api/users/profile", {
+      const response = await fetch("https://mern-ecommerce-fgzj.onrender.com/api/users/profile", {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -114,7 +114,7 @@ const Profile = () => {
         formData.append("profileImage", image);
       }
 
-      const response = await fetch("http://localhost:5000/api/users/profile", {
+      const response = await fetch("https://mern-ecommerce-fgzj.onrender.com/api/users/profile", {
         method: "PUT",
         headers: {
           Authorization: `Bearer ${token}`,

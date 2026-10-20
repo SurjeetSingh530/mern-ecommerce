@@ -38,7 +38,7 @@ const EditProduct = () => {
     const fetchProduct = async () => {
       try {
         const response = await fetch(
-          `http://localhost:5000/api/products/${id}`,
+          `https://mern-ecommerce-fgzj.onrender.com/api/products/${id}`,
         );
 
         const data = await response.json();
@@ -121,7 +121,7 @@ const EditProduct = () => {
         formData.append("image", newImage);
       }
 
-      const response = await fetch(`http://localhost:5000/api/products/${id}`, {
+      const response = await fetch(`https://mern-ecommerce-fgzj.onrender.com/api/products/${id}`, {
         method: "PUT",
 
         headers: {

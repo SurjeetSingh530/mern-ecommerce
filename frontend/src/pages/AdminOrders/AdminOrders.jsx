@@ -16,7 +16,7 @@ const AdminOrders = () => {
       setLoading(true);
 
       const response = await fetch(
-        "http://localhost:5000/api/orders/admin/all",
+        "https://mern-ecommerce-fgzj.onrender.com/api/orders/admin/all",
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -50,7 +50,7 @@ const AdminOrders = () => {
       setUpdatingId(orderId);
 
       const response = await fetch(
-        `http://localhost:5000/api/orders/admin/${orderId}/status`,
+        `https://mern-ecommerce-fgzj.onrender.com/api/orders/admin/${orderId}/status`,
         {
           method: "PUT",
 

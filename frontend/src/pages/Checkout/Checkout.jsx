@@ -100,7 +100,7 @@ const Checkout = () => {
       }));
 
       if (paymentMethod === "COD") {
-        const response = await fetch("http://localhost:5000/api/orders", {
+        const response = await fetch("https://mern-ecommerce-fgzj.onrender.com/api/orders", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -121,7 +121,7 @@ const Checkout = () => {
       }
 
       const response = await fetch(
-        "http://localhost:5000/api/payment/create-order",
+        "https://mern-ecommerce-fgzj.onrender.com/api/payment/create-order",
         {
           method: "POST",
           headers: {
@@ -201,7 +201,7 @@ const Checkout = () => {
           setError("");
           try {
             const verifyResponse = await fetch(
-              "http://localhost:5000/api/payment/verify",
+              "https://mern-ecommerce-fgzj.onrender.com/api/payment/verify",
               {
                 method: "POST",
                 headers: {

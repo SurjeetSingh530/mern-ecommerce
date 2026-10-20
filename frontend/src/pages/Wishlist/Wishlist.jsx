@@ -16,7 +16,7 @@ const Wishlist = () => {
   // Get wishlist
   const fetchWishlist = async () => {
     try {
-      const response = await fetch("http://localhost:5000/api/wishlist", {
+      const response = await fetch("https://mern-ecommerce-fgzj.onrender.com/api/wishlist", {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -46,7 +46,7 @@ const Wishlist = () => {
   const removeFromWishlist = async (productId) => {
     try {
       const response = await fetch(
-        `http://localhost:5000/api/wishlist/${productId}`,
+        `https://mern-ecommerce-fgzj.onrender.com/api/wishlist/${productId}`,
         {
           method: "DELETE",
           headers: {

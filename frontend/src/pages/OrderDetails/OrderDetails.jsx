@@ -13,7 +13,7 @@ const OrderDetails = () => {
 
   const fetchOrder = async () => {
     try {
-      const response = await fetch(`http://localhost:5000/api/orders/${id}`, {
+      const response = await fetch(`https://mern-ecommerce-fgzj.onrender.com/api/orders/${id}`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },

@@ -43,7 +43,7 @@ const VerifyOTP = () => {
 
     try {
       const response = await fetch(
-        "http://localhost:5000/api/auth/verify-email-otp",
+        "https://mern-ecommerce-fgzj.onrender.com/api/auth/verify-email-otp",
         {
           method: "POST",
 
@@ -85,7 +85,7 @@ const VerifyOTP = () => {
 
     try {
       const response = await fetch(
-        "http://localhost:5000/api/auth/resend-email-otp",
+        "https://mern-ecommerce-fgzj.onrender.com/api/auth/resend-email-otp",
         {
           method: "POST",
 

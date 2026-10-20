@@ -81,7 +81,7 @@ const Products = () => {
 
       // API
       const response = await fetch(
-        `http://localhost:5000/api/products?${params.toString()}`,
+        `https://mern-ecommerce-fgzj.onrender.com/api/products?${params.toString()}`,
       );
 
       const data = await response.json();
@@ -121,7 +121,7 @@ const Products = () => {
     }
 
     try {
-      const response = await fetch("http://localhost:5000/api/wishlist", {
+      const response = await fetch("https://mern-ecommerce-fgzj.onrender.com/api/wishlist", {
         method: "POST",
 
         headers: {

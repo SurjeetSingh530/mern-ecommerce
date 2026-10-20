@@ -67,7 +67,7 @@ const AddProduct = () => {
       // Important
       formData.append("image", image);
 
-      const response = await fetch("http://localhost:5000/api/products", {
+      const response = await fetch("https://mern-ecommerce-fgzj.onrender.com/api/products", {
         method: "POST",
 
         headers: {

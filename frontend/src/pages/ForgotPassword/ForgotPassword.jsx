@@ -36,7 +36,7 @@ const ForgotPassword = () => {
       setLoading(true);
 
       const response = await fetch(
-        "http://localhost:5000/api/auth/forgot-password",
+        "https://mern-ecommerce-fgzj.onrender.com/api/auth/forgot-password",
         {
           method: "POST",
           headers: {
@@ -92,7 +92,7 @@ const ForgotPassword = () => {
       setLoading(true);
 
       const response = await fetch(
-        "http://localhost:5000/api/auth/verify-reset-otp",
+        "https://mern-ecommerce-fgzj.onrender.com/api/auth/verify-reset-otp",
         {
           method: "POST",
           headers: {
@@ -166,7 +166,7 @@ const ForgotPassword = () => {
       setLoading(true);
 
       const response = await fetch(
-        "http://localhost:5000/api/auth/reset-password",
+        "https://mern-ecommerce-fgzj.onrender.com/api/auth/reset-password",
         {
           method: "POST",
           headers: {

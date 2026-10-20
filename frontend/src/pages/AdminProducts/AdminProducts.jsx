@@ -15,7 +15,7 @@ const AdminProducts = () => {
       setLoading(true);
       setError("");
 
-      const response = await fetch("http://localhost:5000/api/products");
+      const response = await fetch("https://mern-ecommerce-fgzj.onrender.com/api/products");
 
       const data = await response.json();
 
@@ -57,7 +57,7 @@ const AdminProducts = () => {
     if (!confirmDelete) return;
 
     try {
-      const response = await fetch(`http://localhost:5000/api/products/${id}`, {
+      const response = await fetch(`https://mern-ecommerce-fgzj.onrender.com/api/products/${id}`, {
         method: "DELETE",
         headers: {
           Authorization: `Bearer ${token}`,

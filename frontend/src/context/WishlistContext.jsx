@@ -16,7 +16,7 @@ export const WishlistProvider = ({ children }) => {
     }
 
     try {
-      const response = await fetch("http://localhost:5000/api/wishlist", {
+      const response = await fetch("https://mern-ecommerce-fgzj.onrender.com/api/wishlist", {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -46,7 +46,7 @@ export const WishlistProvider = ({ children }) => {
     }
 
     try {
-      const response = await fetch("http://localhost:5000/api/wishlist", {
+      const response = await fetch("https://mern-ecommerce-fgzj.onrender.com/api/wishlist", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -78,7 +78,7 @@ export const WishlistProvider = ({ children }) => {
 
     try {
       const response = await fetch(
-        `http://localhost:5000/api/wishlist/${productId}`,
+        `https://mern-ecommerce-fgzj.onrender.com/api/wishlist/${productId}`,
         {
           method: "DELETE",
           headers: {
