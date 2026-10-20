@@ -107,7 +107,7 @@ function Home() {
           </div>
         )}
 
-        <div className="home-bottom-cta">
+        <div className="home-bottom-cta">    
           <Link to="/products" className="hero-button">
             Discover All Products →
           </Link>
