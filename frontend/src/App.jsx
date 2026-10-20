@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { AuthProvider } from "./context/AuthContext";
 import { CartProvider } from "./context/CartContext";
 import { WishlistProvider } from "./context/WishlistContext";
-
+import Home from "./pages/Home/Home";
 import Navbar from "./components/Navbar/Navbar";
 import ProtectedRoute from "./components/ProtectedRoute";
 
@@ -50,7 +50,7 @@ function App() {
 
             <Routes>
               {/* ================= HOME ================= */}
-              <Route path="/" element={<h1>Welcome to ShopCart</h1>} />
+              <Route path="/" element={<Home />} />
 
               {/* ================= PUBLIC ROUTES ================= */}
 
